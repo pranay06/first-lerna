@@ -1,0 +1,59 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], sort: true, concurrency: 4 }
+2 verbose rootPath /home/radical/playground/lerna/first-lerna
+3 info version 2.0.0-rc.5
+4 info versioning independent
+5 silly isInitialized
+6 silly isInitialized true
+7 silly existsSync /home/radical/playground/lerna/first-lerna/VERSION
+8 silly initialize attempt
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 warn No tags found!
+14 info Comparing with initial commit.
+15 verbose updated alpha
+16 verbose updated beta
+17 verbose updated usage
+18 silly collectDependents
+19 silly isPackageDependentOf alpha alpha
+20 silly isPackageDependentOf alpha beta
+21 silly isPackageDependentOf alpha usage
+22 silly isPackageDependentOf beta alpha
+23 silly isPackageDependentOf beta beta
+24 silly isPackageDependentOf beta usage
+25 silly isPackageDependentOf usage alpha
+26 verbose dependent usage depends on alpha
+27 silly isPackageDependentOf usage beta
+28 verbose dependent usage depends on beta
+29 silly isPackageDependentOf usage usage
+30 silly isPackageDependentOf alpha usage
+31 silly isPackageDependentOf beta usage
+32 silly collectUpdates
+33 verbose has filtered update alpha
+34 verbose has filtered update beta
+35 verbose has filtered update usage
+36 silly initialize success
+37 silly execute attempt
+38 silly isDetachedHead
+39 silly getCurrentBranch
+40 error execute Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+40 error execute Use '--' to separate paths from revisions, like this:
+40 error execute 'git <command> [<revision>...] -- [<file>...]'
+40 error execute
+40 error execute     at Function.ret.catch.module.exports.spawned.on.module.exports.stdout.module.exports.stderr.module.exports.shell.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+40 error execute     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+40 error execute     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+40 error execute     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+40 error execute     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:235:55)
+40 error execute     at PublishCommand._attempt (/usr/local/lib/node_modules/lerna/lib/Command.js:265:21)
+40 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:252:15
+40 error execute     at /usr/local/lib/node_modules/lerna/lib/Command.js:274:13
+40 error execute     at /usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:475:11
+40 error execute     at /usr/local/lib/node_modules/lerna/lib/PromptUtilities.js:38:9
+40 error execute  callback with error
+40 error execute  [Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+40 error execute Use '--' to separate paths from revisions, like this:
+40 error execute 'git <command> [<revision>...] -- [<file>...]'
+40 error execute ]
